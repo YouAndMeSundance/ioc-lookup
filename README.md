@@ -15,20 +15,22 @@ Providers are optional. If the API key is not present, that provider is skipped 
    pip install requests
 2. Set API keys as environment variables before running:
 
+```bash
 export VT_API_KEY="your_vt_key"
 export ABUSEIPDB_API_KEY="your_abuseipdb_key"
 export OTX_API_KEY="your_otx_key"
+```
 
 Input
 
 A text or CSV file with IOCs separated by newlines, commas, or spaces. Examples:
-
+```bash
 8.8.8.8
 example.com
 44d88612fea8a8f36de82e1278abb02f
 d131dd02c5e6eec4693d9a0698aff95c
 275a021bbfb6480f2c2cfb45f0e9f9e9b892b4f9f7f0a2b2b176bece1d1a2f3a
-
+```
 Usage
 # From a file to stdout
 python3 ioc_lookup.py --input iocs.txt
